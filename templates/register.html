@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ro'yxatdan o'tish - Mavzu Online Market</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Plus Jakarta Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at top right, #eff6ff, #f8fafc);
+        }
+        .auth-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Navigatsiya (Minimalistik) -->
+    <nav class="p-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="cursor-pointer" onclick="window.location.href='index.html'">
+                <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent tracking-tighter">MAVZU</span>
+            </div>
+            <a href="/" class="text-sm font-semibold text-slate-500 hover:text-blue-600 transition flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                Bosh sahifaga qaytish
+            </a>
+        </div>
+    </nav>
+
+    <!-- Auth Section -->
+    <main class="flex-grow flex items-center justify-center px-4 py-12">
+        <div class="auth-card w-full max-w-xl p-10 md:p-12 rounded-[3rem] shadow-2xl border border-white/50 relative overflow-hidden">
+            
+            <!-- Dekorativ elementlar -->
+            <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-100 rounded-full blur-3xl opacity-60"></div>
+            <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-indigo-100 rounded-full blur-3xl opacity-60"></div>
+
+            <div class="relative z-10">
+                <div class="text-center mb-10">
+                    <h1 class="text-3xl font-black text-slate-900 mb-3">Hisob yaratish</h1>
+                    <p class="text-slate-500">Mavzu Market oilasiga xush kelibsiz! Ma'lumotlaringizni kiriting.</p>
+                </div>
+
+                <form class="space-y-5">
+                    <!-- Ism va Familiya -->
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 ml-1">Ism</label>
+                            <input type="text" placeholder="Ali" class="w-full px-6 py-4 rounded-2xl bg-slate-100/50 border border-transparent focus:border-blue-500 focus:bg-white outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 ml-1">Familiya</label>
+                            <input type="text" placeholder="Valiyev" class="w-full px-6 py-4 rounded-2xl bg-slate-100/50 border border-transparent focus:border-blue-500 focus:bg-white outline-none transition">
+                        </div>
+                    </div>
+
+                    <!-- Email/Telefon -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 ml-1">Telefon raqam yoki Email</label>
+                        <input type="text" placeholder="+998 90 123 45 67" class="w-full px-6 py-4 rounded-2xl bg-slate-100/50 border border-transparent focus:border-blue-500 focus:bg-white outline-none transition">
+                    </div>
+
+                    <!-- Parol -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 ml-1">Parol yaratish</label>
+                        <div class="relative">
+                            <input type="password" placeholder="••••••••" class="w-full px-6 py-4 rounded-2xl bg-slate-100/50 border border-transparent focus:border-blue-500 focus:bg-white outline-none transition">
+                            <button type="button" class="absolute right-5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Qoidalar -->
+                    <div class="flex items-start space-x-3 py-2">
+                        <input type="checkbox" id="terms" class="mt-1 w-5 h-5 rounded-lg border-slate-300 text-blue-600 focus:ring-blue-500">
+                        <label for="terms" class="text-sm text-slate-500 leading-tight">
+                            Men <a href="#" class="text-blue-600 font-bold hover:underline">Foydalanish shartlari</a> va <a href="#" class="text-blue-600 font-bold hover:underline">Maxfiylik siyosati</a>ga roziman.
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-5 rounded-2xl font-bold text-lg hover:shadow-xl hover:shadow-blue-200 transition-all transform active:scale-95">
+                        Ro'yxatdan o'tish
+                    </button>
+                </form>
+
+                <!-- Divider -->
+                <div class="relative my-10">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-slate-200"></div>
+                    </div>
+                    <div class="relative flex justify-center text-sm">
+                        <span class="px-4 bg-white text-slate-400">Yoki davom eting</span>
+                    </div>
+                </div>
+
+                <!-- Social Auth -->
+                <div class="grid grid-cols-2 gap-4">
+                    <button class="flex items-center justify-center py-3 border border-slate-200 rounded-xl hover:bg-slate-50 transition font-medium text-slate-700">
+                        <img src="https://www.svgrepo.com/show/355037/google.svg" class="h-5 w-5 mr-2" alt="Google">
+                        Google
+                    </button>
+                    <button class="flex items-center justify-center py-3 border border-slate-200 rounded-xl hover:bg-slate-50 transition font-medium text-slate-700">
+                        <svg class="h-5 w-5 mr-2 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        Facebook
+                    </button>
+                </div>
+
+                <!-- Login Link -->
+                <p class="text-center mt-8 text-slate-500">
+                    Akkauntingiz bormi? <a href="#" class="text-blue-600 font-bold hover:underline">Kirish</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Footer -->
+    <footer class="p-8 text-center text-slate-400 text-xs">
+        &copy; 2024 Mavzu Market. Barcha huquqlar himoyalangan.
+    </footer>
+
+</body>
+</html>

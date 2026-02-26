@@ -1,0 +1,105 @@
+ {% extends "./base.html"%}
+ 
+ {% block body%}
+<!-- Header Section -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-black text-slate-900 mb-4">Biz bilan bog'laning</h1>
+        <p class="text-lg text-slate-500 max-w-2xl mx-auto">Savollaringiz bormi? Biz sizga yordam berishdan mamnunmiz. Quyidagi shaklni to'ldiring yoki bizga to'g'ridan-to'g'ri qo'ng'iroq qiling.</p>
+    </div>
+</section>
+
+<!-- Contact Info & Form -->
+<section class="pb-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-3 gap-10">
+            
+            <!-- Contact Cards -->
+            <div class="space-y-6">
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Telefon</h3>
+                    <p class="text-slate-500 mb-4">Har kuni 09:00 dan 21:00 gacha qo'ng'iroqlarni qabul qilamiz.</p>
+                    <a href="tel:+998712000000" class="text-blue-600 font-bold text-lg hover:underline">+998 71 200 00 00</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Elektron pochta</h3>
+                    <p class="text-slate-500 mb-4">Bizga istalgan vaqtda yozishingiz mumkin, biz 24 soat ichida javob beramiz.</p>
+                    <a href="mailto:info@mavzu.uz" class="text-purple-600 font-bold text-lg hover:underline">info@mavzu.uz</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Manzil</h3>
+                    <p class="text-slate-500 mb-4">Toshkent shahar, Chilonzor tumani, Bunyodkor ko'chasi, 42-uy.</p>
+                    <a href="#" class="text-orange-600 font-bold hover:underline">Xaritada ko'rish &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:col-span-2 bg-white p-10 md:p-12 rounded-[3rem] shadow-xl border border-slate-50">
+                <h2 class="text-2xl font-bold text-slate-900 mb-8">Xabar yuborish</h2>
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Ismingiz</label>
+                            <input type="text" placeholder="Ismingizni kiriting" class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-600 outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Telefon raqamingiz</label>
+                            <input type="tel" placeholder="+998" class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-600 outline-none transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Mavzu</label>
+                        <select class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-600 outline-none transition appearance-none">
+                            <option>Umumiy savollar</option>
+                            <option>Buyurtma holati</option>
+                            <option>Hamkorlik</option>
+                            <option>Shikoyat va takliflar</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Xabaringiz</label>
+                        <textarea rows="5" placeholder="Xabaringizni yozing..." class="w-full px-6 py-4 rounded-2xl bg-slate-50 border-none focus:ring-2 focus:ring-blue-600 outline-none transition resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-5 rounded-2xl font-bold text-lg hover:bg-blue-700 transition shadow-lg shadow-blue-200 transform hover:-translate-y-1">
+                        Xabarni yuborish
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Map Placeholder -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div class="w-full h-96 bg-slate-200 rounded-[3rem] overflow-hidden relative grayscale hover:grayscale-0 transition duration-700 shadow-inner">
+        <!-- Bu yerda Google Map iframe bo'lishi mumkin -->
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center">
+                <div class="bg-white/80 backdrop-blur px-6 py-3 rounded-2xl shadow-lg border border-white">
+                    <span class="font-bold text-slate-800">Bizning asosiy do'konimiz shu yerda</span>
+                </div>
+            </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=1200" class="w-full h-full object-cover opacity-50" alt="Map Placeholder">
+    </div>
+</section>
+{%endblock%}
